@@ -1,0 +1,41 @@
+.header
+{
+    border-bottom: 0.1px solid black;
+    display: flex;
+    background-color: aqua;
+    max-width:  1200px;
+    height: 6em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.body
+{
+    display: flex;
+    height: 600px;
+    
+}
+.news
+{
+    background-color: darkkhaki;
+    width: 360px;
+    
+}
+.dkhp
+{
+    max-width: 840px;
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    
+    border-right: 0.1px solid black;
+    
+}
+.footer
+{
+    display: flex;
+    height: 1.5em;
+    background-color: orange;
+    max-width:  1200px;
+    justify-content: center;
+}

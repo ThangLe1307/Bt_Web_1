@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.6.1.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <style>
+        #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+        #sortable li span { position: absolute; margin-left: -1.3em; }
+        </style>
+
+    <script>
+    $(document).ready(function () {
+        $('#accordion').accordion({
+            collapsible: true,
+            active: true,
+            
+            
+            height: 'fill',
+            header: 'h3'
+        }).sortable({
+            items: '.s_panel'
+        });
+    
+        
+    });
+
+</script>
+
+    
+
+    
+    
 </head>
 
-<body>
+<body class="contrainer">
     <div class="header">Bài tập 1 - 20120188</div>
     <div class="body">
 
@@ -48,9 +79,46 @@
         </div>
         
         <div class="news" >
+            <div id="accordion">
+                <div class="s_panel">
+                     <h3>NEWS 01</h3>
+                    <div>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content  Content Content Content Content </div>
+                </div>
 
-            NEWss
+                <div class="s_panel">
+                    <h3>NEWS 02</h3>
+                   <div>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content  Content Content Content Content </div>
+               </div>
+               <div class="s_panel">
+                <h3>NEWS 03</h3>
+               <div>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content  Content Content Content Content </div>
+           </div>
+
+           <div class="s_panel">
+            <h3>NEWS 04</h3>
+           <div>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content  Content Content Content Content </div>
+       </div>
+                
+
+                
+
+
+
+
+
+
+            </div>
+
+            
+
+
+
+
+
+
         </div>
+        
+     
      
        
 
